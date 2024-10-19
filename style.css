@@ -1,0 +1,250 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; /* Ensures the video covers the full width */
+    min-height: 100%; /* Ensures the video covers the full height */
+    z-index: -1; /* Places the video behind the content */
+    object-fit: cover; /* Ensures the video doesn't get distorted */
+    filter: brightness(60%); /* Optional: adjust brightness */
+}
+
+#about {
+    color: white; /* Changes the text color of the About Me section to white */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a semi-transparent background */
+    padding: 20px; /* Optional: adds padding around the content */
+    border-radius: 8px; /* Optional: rounds the corners of the section */
+}
+
+/* Gradient effect for text */
+#skills ul, #tools ul{
+    background: linear-gradient(to right, rgb(0, 0, 0, 0.5), rgb(255, 255, 255, 0.5)); /* Black and white gradient */
+    -webkit-background-clip: none; /* Clip the background to the text */
+    background-clip: none;
+    color: white; 
+}
+
+
+/* Header Styles */
+header {
+    background-image: url('1729254729826000b6wu1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.6); /* Black overlay with 60% transparency */
+    color: #FFFFFF;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header p {
+    color: black;
+    font-size: 1.5rem;
+    text-shadow: 
+        1px 1px 0px rgb(255, 255, 255), 
+        -1px -1px 0px rgb(255, 253, 253), 
+        -1px 1px 0px rgb(255, 255, 255), 
+        1px -1px 0px rgb(255, 255, 255); /* Change this to your desired color */
+}
+
+header h1 {
+    font-style: oblique;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3.5rem;
+    color: rgb(253, 255, 255);
+    text-shadow: 
+    2px 2px 0px rgb(0, 0, 0), /* First shadow */
+    -2px -2px 0px rgb(0, 0, 0), 
+    2px -2px 0px rgb(0, 0, 0), 
+    -2px 2px 0px rgb(0, 0, 0), 
+        1px 1px 0px white, 
+        -1px -1px 0px white, 
+        -1px 1px 0px white, 
+        1px -1px 0px white;
+}
+
+header h1 {
+    color: rgb(121, 86, 26); /* Change this to your desired color */
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #8f3838;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    text-shadow:
+        1px 1px 0px black, 
+        -1px -1px 0px black, 
+        -1px 1px 0px rgb(0, 0, 0), 
+        1px -1px 0px rgb(0, 0, 0);
+}
+
+/* Hover animation for header links */
+header nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Container Styles */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    animation: slideUp 0.8s ease-in-out;
+    color: rgb(79, 166, 166);
+}
+
+/* Project Box Animation */
+.project {
+    background: linear-gradient(to right, rgb(0, 0, 0, 0.5), rgb(255, 255, 255, 0.5));
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(87, 35, 35, 0.1);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.project h3 {
+    background: linear-gradient(to right, rgb(243, 193, 193, 0.5), rgb(0, 0, 0, 0.5)); /* Black to white gradient */
+    -webkit-background-clip: text; /* Clip the background to the text (for WebKit browsers) */
+    background-clip: text;
+    color: white; /* Make the text color transparent so the gradient shows */
+}
+
+
+.project a {
+    text-decoration: none;
+    color: #2e3031;
+    transition: color 0.3s ease-in-out;
+}
+
+.project p {
+    position: relative; /* For positioning */
+    color: transparent; /* Make the text color transparent */
+    background: linear-gradient(to right, white, rgb(251, 217, 217)); /* White to black gradient */
+    background-clip: text; /* Clip the background to the text */
+    -webkit-background-clip: text; /* For WebKit browsers */
+    display: inline-block; /* Ensure the width fits the text */
+    overflow: hidden; /* Hide overflow */
+}
+
+
+/* Hover effect on project links */
+.project a:hover {
+    color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #d4bbbb;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#contact p {
+    color: white; /* Change text color to white */
+}
+
+.contact-info {
+    display: flex; /* Use flexbox */
+    gap: 20px; /* Optional: space between items */
+}
+
+.vertical-line {
+    width: 1px; /* Width of the line */
+    background-color: white; /* Color of the line */
+    height: 20px; /* Height of the line */
+    margin: 0 10px; /* Space on both sides */
+}
+.contact-info p {
+    margin: 0; /* Remove default margin */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Button Animation (Optional) */
+button {
+    background-color: #007bff;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
