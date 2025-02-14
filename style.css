@@ -42,7 +42,7 @@ body, html {
 
 /* Header Styles */
 header {
-    background-image: url('portfolio_logo_virus_theme_inverted.jpeg');
+    background-image: url('IMG_20240529_053931.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -163,6 +163,7 @@ h2 {
 
 /* Footer Styles */
 footer {
+    background-image: url('IMG_20240529_053931.jpg');
     background-color: #d4bbbb;
     color: #FFFFFF;
     text-align: center;
